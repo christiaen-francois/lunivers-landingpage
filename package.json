@@ -1,0 +1,22 @@
+{
+  "name": "Lunivers",
+  "version": "1.0.0",
+  "description": "Une équipe qui a plus de 10 ans d'expérience dans l'écoute du client, le conseil pratique et la réalisation de sites internet sur mesure.",
+  "author": "Christiaen François",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0",
+    "nuxt": "^2.0.0",
+    "nuxt-start": "^2.13.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.3.0"
+  }
+}
