@@ -1,12 +1,14 @@
 <template>
-  <div class="container">
+  <div class="container-wrapper">
     <div>
       <h1 class="mb-5" id="logo">
         <logo />
       </h1>
+      <div class="contacts">
+        <p>Duarrefstrooss, 2 L - 9990 Weiswampach</p>
+      </div>
       <div class="links">
         <p><a href="mailto:go@lunivers.lu" class="btn btn-primary">Contact</a></p>
-        <nuxt-link class="btn btn-link btn-sm" to="/cg">Conditions générales</nuxt-link>
       </div>
     </div>
   </div>
@@ -30,12 +32,5 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 </style>

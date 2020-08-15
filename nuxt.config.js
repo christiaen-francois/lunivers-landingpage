@@ -16,8 +16,10 @@ export default {
     ],
 
     script: [
-      { hid: 'particles', src: "/js/particles.min.js", type: "text/javascript", defer: true },
-      { hid: 'gsap', src: "/js/gsap.min.js", type: "text/javascript", defer: true },
+      { hid: 'jquery', src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", type: "text/javascript", defer: false },
+      { hid: 'particles', src: "/js/starfield.js", type: "text/javascript", defer: true },
+      { hid: 'parallax', src: "https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js", type: "text/javascript", defer: true },
+      //{ hid: 'gsap', src: "/js/gsap.min.js", type: "text/javascript", defer: true },
       { hid: 'appscripts', src: "/js/scripts.js", type: "text/javascript", defer: true },
     ]
   },
