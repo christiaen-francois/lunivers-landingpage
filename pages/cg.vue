@@ -1,7 +1,7 @@
 <template>
   <div class="container-wrapper">
     <div>
-      <h1 class="mb-5">
+      <h1 class="mb-4">
         <nuxt-link class="btn btn-link" to="/">
             <logo />
         </nuxt-link>

@@ -65,7 +65,7 @@
       bgColor: "rgba(9,41,56,1)",
       mouseMove: true,
       mouseColor: "rgba(0,0,0,0.2)",
-      mouseSpeed: 20,
+      mouseSpeed: 15,
       fps: 15,
       speed: 2.5,
       quantity: 512,

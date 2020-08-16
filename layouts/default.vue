@@ -16,6 +16,9 @@
 <script>
 
 export default {
+  components: {
+    
+  },
   methods:{
     init(){
       console.log("mounted", "init");
@@ -37,6 +40,7 @@ export default {
 </script>
 
 <style>
+
 body{
   background: #002a3b;
   font-family: "Maven Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -63,17 +67,27 @@ body{
   pointer-events: auto!important;
 }
 
-.starfield {
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 110%;
-  height: 110%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /*mix-blend-mode:soft-light;*/
+@media (max-width: 575.98px) {
+  #scene {
+    padding: 6vw;
+  }
 }
+
+a{
+  color:#35495e;
+}
+a:hover{
+  color: #35495e;
+}
+h2{
+
+}
+@media (max-width: 575.98px) {
+  h2{
+    font-size: 1.45rem;
+  }
+}
+
 .container-wrapper{
   background: #fff;
   min-height: calc(100vh - 6vw);
@@ -84,10 +98,34 @@ body{
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 575.98px) {
+  .container-wrapper{
+    min-height: calc(100vh - 12vw);
+    padding: 25px;
+  }
+}
 .container-wrapper > div{
   text-align: center;
 }
+div.starfield {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*mix-blend-mode:soft-light;*/
+}
 
+div.starfield canvas {
+  height:   100%;
+  left:     0;
+  position: absolute;
+  top:      0;
+  width:    100%;
+}
 .background_wrapper{
   position: fixed;
   top: 0;
@@ -109,14 +147,14 @@ body{
 .background-pink{
   z-index: 1;
   background:url("/img/background1.svg") center center no-repeat;
-  -webkit-animation: kenburns-top 20s ease-in-out infinite both;
-	        animation: kenburns-top 20s ease-in-out infinite both;
+  /*-webkit-animation: kenburns-top 20s ease-in-out infinite both;
+	        animation: kenburns-top 20s ease-in-out infinite both;*/
 }
 .background-blue{
   z-index: 2;
   background:url("/img/background2.svg") center center no-repeat;
-  -webkit-animation: kenburns-top 15s ease-in-out infinite both;
-	        animation: kenburns-top 15s ease-in-out infinite both;
+  /*-webkit-animation: kenburns-top 15s ease-in-out infinite both;
+	        animation: kenburns-top 15s ease-in-out infinite both;*/
 }
 .btn{
   border-radius: 30px;
