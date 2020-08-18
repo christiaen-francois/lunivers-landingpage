@@ -26,7 +26,7 @@ export default {
   },
   head(){
       return {
-          title: "Merci Lunivers"
+          title: "Agence de graphisme et digitale de caractère - Weiswampach"
       }
   }
 }
@@ -35,6 +35,28 @@ export default {
 </script>
 
 <style>
+
+.page-enter-active,
+.page-leave-active,
+.page-enter-active>div,
+.page-leave-active>div {
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+
+.page-enter,
+.page-leave-to {
+  transform: scale(1.4);
+  transition-delay: 200ms;
+}
+.page-enter>div,
+.page-leave-to>div {
+  opacity: 0;
+}
+
+
 address{
       position: absolute;
     bottom: 0;
