@@ -1,7 +1,7 @@
 {
-  "name": "Lunivers",
+  "name": "lunivers",
   "version": "1.0.0",
-  "description": "Lunivers est une agence web et graphique située à Weiswampach spécialisée dans le développement didentité sur mesure. Une équipe qui a plus de 10 ans d'expérience dans l'écoute de ses clients.",
+  "description": "Lunivers est une agence web et graphique située à Weiswampach spécialisée dans le développement d'identités sur mesure. Avec une équipe qui a plus de 10 ans d'expérience dans l'écoute de ses clients.",
   "author": "Christiaen François",
   "private": true,
   "scripts": {
