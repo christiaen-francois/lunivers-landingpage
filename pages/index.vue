@@ -5,12 +5,11 @@
         <logo />
       </div>
       <div class="contacts mb-4">
-        <h1>Créations graphiques print / web &amp; de sites internet de haute qualité</h1>
+        <h1>Créations graphiques &amp; développements de sites <br><strong>de haute qualité</strong></h1>
       </div>
       <div class="links mb-4">
         <p><a href="mailto:go@lunivers.lu" class="btn btn-primary">Prendre contact</a></p>
       </div>
-      <p>Punaise, on prétend faire du superbe travail et on a rien... <br>On arrive très bientôt avec un truc qui claque!</p>
       <address>
         Duarrefstrooss, 2 L - 9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
       </address>
@@ -36,6 +35,8 @@ export default {
 </script>
 
 <style>
+
+
 
 .page-enter-active,
 .page-leave-active,
