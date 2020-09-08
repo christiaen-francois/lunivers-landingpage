@@ -123,6 +123,10 @@ body{
   /*transform: translateY(-50%) translateX(-50%);*/
 }
 
+#bg_luni_logo{
+    width: 100%;
+    height: auto;
+  }
 a{
   color:#fff;
 }
