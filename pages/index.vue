@@ -5,10 +5,10 @@
         <logo />
       </div>
       <div class="contacts mb-4">
-        <h1>Créations graphiques &amp; développements de sites <br><strong>de haute qualité</strong></h1>
+        <h1>Conceptions graphiques &amp; développement de sites <br><strong>de caractère</strong></h1>
       </div>
       <div class="links mb-4">
-        <p><a href="mailto:go@lunivers.lu" class="btn btn-primary">Prendre contact</a></p>
+        <p><a href="mailto:go@lunivers.lu" v-on:click="gaTrack" class="btn btn-primary">Prendre contact</a></p>
       </div>
       <address>
         Duarrefstrooss, 2 L - 9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
@@ -28,6 +28,15 @@ export default {
       return {
           title: "Agence de graphisme et création de sites web de caractère - Weiswampach"
       }
+  },
+  methods : {
+    gaTrack : function(event){
+      ga('send', 'event', {
+        eventCategory: 'Contact',
+        eventAction: 'click',
+        eventLabel: event.target.href
+      });
+    }
   }
 }
 
@@ -35,8 +44,6 @@ export default {
 </script>
 
 <style>
-
-
 
 .page-enter-active,
 .page-leave-active,
