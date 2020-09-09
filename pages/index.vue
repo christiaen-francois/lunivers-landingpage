@@ -40,7 +40,6 @@ export default {
   }
 }
 
-
 </script>
 
 <style>
@@ -64,7 +63,6 @@ export default {
 .page-leave-to>div {
   opacity: 0;
 }
-
 
 address{
       position: absolute;

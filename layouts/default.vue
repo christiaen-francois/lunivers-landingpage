@@ -104,7 +104,7 @@ body{
 
 @media (max-width: 575.98px) {
   #scene {
-    padding: 6vw;
+    /*padding: 6vw;*/
   }
 }
 
@@ -158,7 +158,7 @@ font-size: 1.45rem;
 
 .container-wrapper{
   /*background: #fff;*/
-  min-height: calc(100vh - 6vw);
+  min-height: calc(100vh);
   /*border-bottom-right-radius: 30px;*/
   /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
   padding: 3vw;
@@ -168,7 +168,7 @@ font-size: 1.45rem;
 }
 @media (max-width: 575.98px) {
   .container-wrapper{
-    min-height: calc(100vh - 12vw);
+    min-height: calc(100vh - 6vw);
     padding: 25px;
   }
 }
