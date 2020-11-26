@@ -302,10 +302,14 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow: hidden;
   color: rgba(255,255,255,1);
 }
-
+@media screen and (max-height: 640px) {
+  body{
+    overflow-y: auto;
+  }
+}
 *,
 *:before,
 *:after {
