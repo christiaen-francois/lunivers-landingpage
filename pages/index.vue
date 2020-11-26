@@ -10,9 +10,6 @@
       <div class="links mb-4">
         <p><a href="mailto:go@lunivers.lu" v-on:click="gaTrack" class="btn btn-primary">Prendre contact</a></p>
       </div>
-      <address>
-        Duarrefstrooss, 2 L - 9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
-      </address>
     </div>
   </div>
 </template>
@@ -64,15 +61,5 @@ export default {
   opacity: 0;
 }
 
-address{
-      position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    font-size: .8rem;
-    opacity: .5;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
+
 </style>
