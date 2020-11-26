@@ -15,7 +15,7 @@
     "bootstrap-vue": "^2.0.0",
     "nuxt": "^2.0.0",
     "nuxt-start": "^2.13.2",
-    "three": "^0.123.0"
+    "three": "0.122.0"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.3.0"
