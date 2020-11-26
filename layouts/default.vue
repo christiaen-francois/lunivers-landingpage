@@ -304,6 +304,12 @@ body{
   box-sizing: border-box;
   overflow: hidden;
   color: rgba(255,255,255,1);
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
 }
 @media screen and (max-height: 640px) {
   body{
