@@ -291,6 +291,12 @@ export default {
 </script>
 
 <style>
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body{
   background: #002a3b;
@@ -304,23 +310,20 @@ body{
   box-sizing: border-box;
   overflow: hidden;
   color: rgba(255,255,255,1);
+  display: flex; 
+  flex-direction: column;
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
 html {
+  height: 100%;
   height: -webkit-fill-available;
 }
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 600px) {
   body{
     overflow-y: auto;
   }
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 canvas {
@@ -329,6 +332,7 @@ canvas {
   top: 0;
   left: 0;
 }
+
 #scene {
   /* padding: 3vw; */
   min-height: 100%;
@@ -341,6 +345,16 @@ canvas {
   #scene {
     /*padding: 6vw;*/
   }
+}
+
+#__nuxt,
+#__layout,
+#__layout > div,
+#scene,
+.container-wrapper
+{
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; */
 }
 #__layout > div{ position: relative;}
 #bg_luni{
@@ -393,8 +407,8 @@ font-size: 1.45rem;
 
 .container-wrapper{
   /*background: #fff;*/
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /* min-height: 100vh;
+  min-height: -webkit-fill-available; */
   /*border-bottom-right-radius: 30px;*/
   /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
   padding: 3vw;
