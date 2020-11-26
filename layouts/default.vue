@@ -45,7 +45,7 @@
     </div>
     <address>
       <strong>Contact</strong> : <a href="mailto:go@lunivers.lu" v-on:click="gaTrack">@lunivers</a> - <a href="mailto:olivier@lunivers.lu" v-on:click="gaTrack">@Olivier</a> - <a href="mailto:francois@lunivers.lu" v-on:click="gaTrack">@François</a><br>
-      Duarrefstrooss 2, L-9990 Weiswampach - <nuxt-link to="/cg">Conditions générales {{windowHeight}}</nuxt-link>
+      Duarrefstrooss 2, L-9990 Weiswampach<!--  - <nuxt-link to="/cg">Conditions générales</nuxt-link> -->
     </address>
   </div>
 </template>
