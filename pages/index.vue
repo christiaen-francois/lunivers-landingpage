@@ -7,7 +7,7 @@
       <div class="contacts mb-4">
         <h1>Conceptions graphiques &amp; développement de sites <br><strong>de caractère</strong></h1>
       </div>
-      <p><nuxt-link to="/references">Nos références</nuxt-link></p>
+      <!-- <p><nuxt-link to="/references">Nos références</nuxt-link></p> -->
       <div class="links mb-4">
         <p><a href="mailto:go@lunivers.lu" v-on:click="gaTrack" class="btn btn-primary">Prendre contact</a></p>
       </div>

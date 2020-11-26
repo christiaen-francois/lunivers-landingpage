@@ -1,5 +1,10 @@
 <template>
   <div>
+    <style>
+      :root {
+        --vp-height: {{windowHeight}};
+      }
+    </style>
     <div id="scene">
       <div data-depth="0.1">
         <nuxt />
@@ -40,7 +45,7 @@
     </div>
     <address>
       <strong>Contact</strong> : <a href="mailto:go@lunivers.lu" v-on:click="gaTrack">@lunivers</a> - <a href="mailto:olivier@lunivers.lu" v-on:click="gaTrack">@Olivier</a> - <a href="mailto:francois@lunivers.lu" v-on:click="gaTrack">@François</a><br>
-      Duarrefstrooss 2, L-9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
+      Duarrefstrooss 2, L-9990 Weiswampach - <nuxt-link to="/cg">Conditions générales {{windowHeight}}</nuxt-link>
     </address>
   </div>
 </template>
@@ -75,6 +80,7 @@ export default {
         x: 0,
         y: 0
       },
+      windowHeight : null,
       windowHalfX : window.innerWidth / 2,
       windowHalfY : window.innerHeight / 2,
       materials : []
@@ -266,9 +272,17 @@ export default {
 
       this.renderer.render( this.scene, this.camera );
 
+    },
+    getWindowHeight (event) {
+      this.windowHeight = document.documentElement.clientHeight
     }
   },
   mounted(){
+
+    this.$nextTick(function () {
+      this.getWindowHeight()
+    })
+    window.addEventListener('resize', this.getWindowHeight);
 
     this.windowHalfX = window.innerWidth / 2;
     this.windowHalfY = window.innerHeight / 2;
