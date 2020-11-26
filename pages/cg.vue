@@ -1,14 +1,10 @@
 <template>
   <div class="container-wrapper">
     <div>
-      <h1 class="mb-4">
-        <nuxt-link class="btn btn-link" to="/">
-            <logo />
-        </nuxt-link>
-      </h1>
       <div class="links">
-        <a href="/doc/conditions-generales_lunivers.pdf" v-on:click="gaTrack" class="btn btn-primary" target="_blank">Télécharger les conditions générales</a>
+        <a href="/doc/conditions-generales_lunivers.pdf" v-on:click="gaTrack" class="" target="_blank">Télécharger les conditions générales</a>
       </div>
+      <nuxt-link class="btn btn-link" to="/">Retour</nuxt-link>
     </div>
   </div>
 </template>

@@ -38,13 +38,9 @@
         </svg>
       </div>
     </div>
-    <div class="starfield"></div>
-    <div class="background_wrapper">
-      <div class="background-pink"></div>
-      <div class="background-blue"></div>
-    </div>
     <address>
-      Duarrefstrooss, 2 L - 9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
+      <strong>Contact</strong> : <a href="mailto:go@lunivers.lu" v-on:click="gaTrack">@lunivers</a> - <a href="mailto:olivier@lunivers.lu" v-on:click="gaTrack">@Olivier</a> - <a href="mailto:francois@lunivers.lu" v-on:click="gaTrack">@François</a><br>
+      Duarrefstrooss 2, L-9990 Weiswampach - <nuxt-link to="/cg">Conditions générales</nuxt-link>
     </address>
   </div>
 </template>
@@ -88,6 +84,13 @@ export default {
     
   },
   methods:{
+    gaTrack : function(event){
+      ga('send', 'event', {
+        eventCategory: 'Contact',
+        eventAction: 'click',
+        eventLabel: event.target.href
+      });
+    },
     init(){
       //console.log("mounted", "init");
       //$(".starfield").starfield();
@@ -172,7 +175,7 @@ export default {
       this.renderer.setClearColor(10842, 1);
 
       // Step 2
-      
+
       this.bg_scene = new THREE.Scene;
       this.bg_camera = new THREE.Camera;
       //camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,.1,1000);
@@ -299,7 +302,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: rgba(255,255,255,1);
 }
 
@@ -329,7 +332,7 @@ canvas {
     /*padding: 6vw;*/
   }
 }
-
+#__layout > div{ position: relative;}
 #bg_luni{
   opacity: .01;
   position: absolute;
@@ -396,59 +399,9 @@ font-size: 1.45rem;
 }
 .container-wrapper > div{
   text-align: center;
-}
-/*
-div.starfield {
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 110%;
-  height: 110%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: .3;
-  mix-blend-mode:soft-light;
+  width: 100%;
 }
 
-div.starfield canvas {
-  height:   100%;
-  left:     0;
-  position: absolute;
-  top:      0;
-  width:    100%;
-}
-.background_wrapper{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  overflow: hidden;
-}
-.background_wrapper div{
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-	opacity: 0.7;
-  transform-origin: 50% 50%;
-  z-index: 20;
-}
-*/
-.background-pink{
-  z-index: 1;
-  background:url("/img/background1.svg") center center no-repeat;
-  /*-webkit-animation: kenburns-top 20s ease-in-out infinite both;
-	        animation: kenburns-top 20s ease-in-out infinite both;*/
-}
-.background-blue{
-  z-index: 2;
-  background:url("/img/background2.svg") center center no-repeat;
-  /*-webkit-animation: kenburns-top 15s ease-in-out infinite both;
-	        animation: kenburns-top 15s ease-in-out infinite both;*/
-}
 .btn{
   border-radius: 30px;
 }
@@ -489,52 +442,5 @@ address{
     text-align: center;
     z-index: 10;
 }
-
-/**
- * ----------------------------------------
- * animation kenburns-top
- * ----------------------------------------
- */
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  50% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-  100% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-}
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  50% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-  100% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-}
-
 
 </style>
