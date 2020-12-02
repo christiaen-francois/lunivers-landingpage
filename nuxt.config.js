@@ -52,7 +52,13 @@ export default {
   */
   buildModules: [
     ['@nuxtjs/google-analytics', {
-      id: 'UA-12301-2'
+      id: 'UA-2946778-55'
+    }],
+    ['@nuxtjs/google-gtag', { 
+      id: 'G-ZXH6X0JP2H',
+      config: {
+        anonymize_ip: true, // anonymize IP 
+      }
     }]
   ],
   /*
