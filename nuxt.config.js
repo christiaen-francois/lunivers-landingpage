@@ -45,7 +45,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/ga.js', mode: 'client' }
+    { src: '~plugins/ga.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,12 +53,6 @@ export default {
   buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-2946778-55'
-    }],
-    ['@nuxtjs/google-gtag', { 
-      id: 'G-ZXH6X0JP2H',
-      config: {
-        anonymize_ip: true, // anonymize IP 
-      }
     }]
   ],
   /*

@@ -295,13 +295,6 @@ export default {
     this.init();
     this.animate();
 
-    // GA4
-    if (process.browser) {
-      this.$gtag('config', 'G-ZXH6X0JP2H', {
-        //page_title: this.$metaInfo.title,
-        //page_path: this.$route.fullPath,
-      })
-    }
   },
   created() {
       //console.log("created", 'created called.');
