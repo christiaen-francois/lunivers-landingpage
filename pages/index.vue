@@ -1,5 +1,9 @@
 <template>
   <div class="container-wrapper">
+    <SocialHead
+      :title="metaTitle"
+      :description="metaDescription"
+    />
     <div>
       <div class="mb-4" id="logo">
         <logo />
@@ -22,9 +26,15 @@ export default {
   components: {
     Logo
   },
+  data(){
+    return {
+      metaTitle: 'Agence de graphisme et création de sites web de caractère - Weiswampach',
+      metaDescription : "Lunivers est une agence web et graphique située à Weiswampach spécialisée dans le développement d'identités sur mesure. Avec une équipe qui a plus de 10 ans d'expérience dans l'écoute de ses clients.",
+    }
+  },
   head(){
       return {
-          title: "Agence de graphisme et création de sites web de caractère - Weiswampach"
+          title: this.metaTitle,
       }
   },
   methods : {
