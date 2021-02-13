@@ -1,9 +1,6 @@
 <template>
   <div class="container-wrapper">
     <div>
-      <div class="links">
-        <a href="/doc/conditions-generales_lunivers.pdf" v-on:click="gaTrack" class="" target="_blank">Télécharger les conditions générales</a>
-      </div>
       <nuxt-link class="btn btn-link" to="/">Retour</nuxt-link>
     </div>
   </div>
