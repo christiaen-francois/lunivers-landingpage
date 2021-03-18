@@ -47,6 +47,19 @@
       <strong>Contact</strong> : <a href="mailto:go@lunivers.lu" v-on:click="gaTrack">@lunivers</a> - <a href="mailto:olivier@lunivers.lu" v-on:click="gaTrack">@Olivier</a> - <a href="mailto:francois@lunivers.lu" v-on:click="gaTrack">@François</a><br>
       Duarrefstrooss 2, L-9990 Weiswampach<!--  - <nuxt-link to="/cg">Conditions générales</nuxt-link> -->
     </address>
+    <script>
+    window.axeptioSettings = {
+      clientId: "6053530628e946343b790007",
+      cookiesVersion: "lunivers-base",
+    };
+     
+    (function(d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+    </script>
+
   </div>
 </template>
 
