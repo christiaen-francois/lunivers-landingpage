@@ -50,7 +50,7 @@
     <script>
     window.axeptioSettings = {
       clientId: "6053530628e946343b790007",
-      cookiesVersion: "lunivers-base",
+      cookiesVersion: "ga_fb",
     };
      
     (function(d, s) {
@@ -59,6 +59,7 @@
       t.parentNode.insertBefore(e, t);
     })(document, "script");
     </script>
+
 
   </div>
 </template>
